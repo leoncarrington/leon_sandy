@@ -1,0 +1,11 @@
+name: Sync GitHub issues to Jira
+on: [issues, issue_comment]
+
+jobs:
+  sync-issues:
+    name: Sync issues to Jira
+    runs-on: ubuntu-latest
+    steps:
+      - uses: canonical/sync-issues-github-jira@v1
+        with:
+          webhook-url: ${{ secrets.https://dsdmoj.atlassian.net/jira/software/c/projects/SSP/boards/894/rest/webhooks/1.0/webhook }}
