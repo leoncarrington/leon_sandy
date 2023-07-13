@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: canonical/sync-issues-github-jira@v1
         with:
-          webhook-url: ${{secrets.https://dsdmoj.atlassian.net/jira/software/c/projects/SSP/boards/894/rest/webhooks/1.0/webhook}}
+          webhook-url: ${{secrets.'https://dsdmoj.atlassian.net/jira/software/c/projects/SSP/boards/894/rest/webhooks/1.0/webhook'}}
