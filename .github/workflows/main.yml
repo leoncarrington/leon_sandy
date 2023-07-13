@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: canonical/sync-issues-github-jira@v1
         with:
-          webhook-url: ${{ secrets.Jira_Url }}
+          webhook-url: ${{ secrets.JIRA_URL }}
